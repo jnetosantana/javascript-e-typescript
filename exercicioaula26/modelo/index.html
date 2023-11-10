@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calcule seu IMC</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
-    <section class="container">
-        <h1>Tabela IMC</h1>
-       <h3>Calcule seu IMC</h3>
 
-        <form class="form">
-            <label for="">Peso: <input type="number" name="Peso" id="peso"></label>
-            <label for="">Altura: <input type="number" name="Altura" id="altura"></label>
-            <button>Calcular</button>
-        </form>
-    </section>
+  <section class="container">
+    <h1>Calcule seu IMC</h1>
+    <form action="/" id="formulario" method="POST">
+      <label for="peso">Peso</label>
+      <input type="text" id="peso" name="peso">
+      <label for="altura">Altura</label>
+      <input type="text" id="altura" name="altura">
+      <button type="submit">Enviar</button>
+    </form>
 
-    <script src="./assets/js/main.js"></script>
+    <div id="resultado"></div>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
